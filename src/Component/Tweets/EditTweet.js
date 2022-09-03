@@ -10,7 +10,7 @@ export default function EditTweet(props) {
     const [newTweet, setNewTweet] = useState("");
     const [editButton, setEditButton] = useState(false);
     const [tagFlag, setTagFlag] = useState(false);
-    const url = "http://localhost:8090/api/v1.0/tweets/";
+    const url = "http://tweetapp-env.eba-v9d5vtkk.us-west-1.elasticbeanstalk.com/api/v1.0/tweets/";
 
     const loginId = localStorage.getItem("loginId");
 

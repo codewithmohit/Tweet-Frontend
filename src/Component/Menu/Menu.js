@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import logo from '../../Images/logo.png'
 export default function Menu() {
 
-    const url = "http://localhost:8090/api/v1.0/tweets/";
+    const url = "http://tweetapp-env.eba-v9d5vtkk.us-west-1.elasticbeanstalk.com/api/v1.0/tweets/";
     const [user, setUser] = useState("");
 
     const navigate = useNavigate();

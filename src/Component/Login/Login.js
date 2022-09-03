@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import ForgetPassword from '../Forget Password/ForgetPassword';
 export default function Login(props) {
-  const url = "http://localhost:8090/api/v1.0/tweets/";
+  const url = "http://tweetapp-env.eba-v9d5vtkk.us-west-1.elasticbeanstalk.com/api/v1.0/tweets/";
   const [loginId, setLoginId] = useState();
   const [password, setPassword] = useState();
   const [modalShowForgetPassword, setModalShowForgetPassword] = useState(false);
