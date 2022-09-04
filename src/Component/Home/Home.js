@@ -13,7 +13,7 @@ export default function Home() {
     const [tweetflag, setTweetFlag] = useState(true);
     const [tagFlag, setTagFlag] = useState(true);
     const [allTweets, setAllTweets] = useState([]);
-    const url = "https://cors-everywhere.herokuapp.com/http://tweet-env.eba-34tepn6j.us-east-1.elasticbeanstalk.com//api/v1.0/tweets/";
+    const url = "https://cors-everywhere.herokuapp.com/http://tweet-env.eba-34tepn6j.us-east-1.elasticbeanstalk.com/api/v1.0/tweets/";
 
     const navigate = useNavigate();
     const loadTweets = async () => {
