@@ -9,7 +9,7 @@ export default function Reply(props) {
     const [reply, setReply] = useState("");
     const [replyButton, setReplyButton] = useState(true);
     const [tagFlag, setTagFlag] = useState(true);
-    const url = "http://tweetapp-env.eba-v9d5vtkk.us-west-1.elasticbeanstalk.com/api/v1.0/tweets/";
+    const url = "http://tweet-env.eba-34tepn6j.us-east-1.elasticbeanstalk.com/api/v1.0/tweets/";
 
     const loginId = localStorage.getItem("loginId");
 
