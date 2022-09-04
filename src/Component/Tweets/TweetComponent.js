@@ -100,7 +100,7 @@ export default function TweetComponent(props) {
 
     const handleViewAllReplyOnTweetButton = (tweetId) => {
 
-        axios.get(url + 'replies/' + tweetId)
+        axios.get(url + 'allreplies/' + tweetId)
             .then((e) => {
                 setReplyList(e.data);
                 if (e.data.length > 0) {
