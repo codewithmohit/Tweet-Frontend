@@ -5,7 +5,7 @@ import TweetComponent from './TweetComponent'
 export default function Tweets(props) {
 
   const [myTweets, setMyTweets] = useState([]);
-  const url = "http://tweet-env.eba-34tepn6j.us-east-1.elasticbeanstalk.com/api/v1.0/tweets/";
+  const url = "https://cors-everywhere.herokuapp.com/http://tweet-env.eba-34tepn6j.us-east-1.elasticbeanstalk.com/api/v1.0/tweets/";
 
   const [flag, setFlag] = useState(true);
 

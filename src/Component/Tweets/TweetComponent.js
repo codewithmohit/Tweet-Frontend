@@ -13,7 +13,7 @@ import EditTweet from './EditTweet';
 import ViewAllReplyOnTweet from './ViewAllReplyOnTweet';
 export default function TweetComponent(props) {
 
-    const url = "http://tweet-env.eba-34tepn6j.us-east-1.elasticbeanstalk.com/api/v1.0/tweets/";
+    const url = "https://cors-everywhere.herokuapp.com/http://tweet-env.eba-34tepn6j.us-east-1.elasticbeanstalk.com/api/v1.0/tweets/";
     const [userLikeOnTweets, setUserLikeOnTweets] = useState([]);
     const [totalLikes, setTotalLikes] = useState({});
     const loginId = localStorage.getItem("loginId");
