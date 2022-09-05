@@ -10,7 +10,7 @@ export default function EditTweet(props) {
     const [newTweet, setNewTweet] = useState("");
     const [editButton, setEditButton] = useState(false);
     const [tagFlag, setTagFlag] = useState(false);
-    const url = "https://cors-everywhere.herokuapp.com/http://tweet-env.eba-34tepn6j.us-east-1.elasticbeanstalk.com/api/v1.0/tweets/";
+    const url = "https://cors-everywhere.herokuapp.com/http://tweetapp-env.eba-rxpmmhpn.us-west-1.elasticbeanstalk.com/api/v1.0/tweets/";
 
     const loginId = localStorage.getItem("loginId");
 

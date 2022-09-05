@@ -13,7 +13,7 @@ import EditTweet from './EditTweet';
 import ViewAllReplyOnTweet from './ViewAllReplyOnTweet';
 export default function TweetComponent(props) {
 
-    const url = "https://cors-everywhere.herokuapp.com/http://tweet-env.eba-34tepn6j.us-east-1.elasticbeanstalk.com/api/v1.0/tweets/";
+    const url = "https://cors-everywhere.herokuapp.com/http://tweetapp-env.eba-rxpmmhpn.us-west-1.elasticbeanstalk.com/api/v1.0/tweets/";
     const [userLikeOnTweets, setUserLikeOnTweets] = useState([]);
     const [totalLikes, setTotalLikes] = useState({});
     const loginId = localStorage.getItem("loginId");
@@ -100,7 +100,7 @@ export default function TweetComponent(props) {
 
     const handleViewAllReplyOnTweetButton = (tweetId) => {
 
-        axios.get(url + 'allreplies/' + tweetId)
+        axios.get(url + 'replies/' + tweetId)
             .then((e) => {
                 setReplyList(e.data);
                 if (e.data.length > 0) {
@@ -108,6 +108,7 @@ export default function TweetComponent(props) {
                     setTweet(props.allTweets.filter(e => e.tweetId === tweetId)[0]);
                 }
             }).catch((error) => {
+                console.log(error);
                 alert(error["response"]["data"]["error-message"]);
             });
 

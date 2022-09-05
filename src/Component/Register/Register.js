@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios';
 export default function Register(props) {
-    const url = "https://cors-everywhere.herokuapp.com/http://tweet-env.eba-34tepn6j.us-east-1.elasticbeanstalk.com/api/v1.0/tweets/";
+    const url = "https://cors-everywhere.herokuapp.com/http://tweetapp-env.eba-rxpmmhpn.us-west-1.elasticbeanstalk.com/api/v1.0/tweets/";
     const [firstName, setFirstName] = useState();
     const [lastName, setLastName] = useState();
     const [email, setEmail] = useState();

@@ -4,7 +4,7 @@ import { Button, Modal } from 'react-bootstrap';
 
 export default function ForgetPassword(props) {
 
-  const url = "https://cors-everywhere.herokuapp.com/http://tweet-env.eba-34tepn6j.us-east-1.elasticbeanstalk.com/api/v1.0/tweets/";
+  const url = "https://cors-everywhere.herokuapp.com/http://tweetapp-env.eba-rxpmmhpn.us-west-1.elasticbeanstalk.com/api/v1.0/tweets/";
   const [loginId, setLoginId] = useState();
   const [password, setPassword] = useState("");
   const [contact, setContact] = useState("");

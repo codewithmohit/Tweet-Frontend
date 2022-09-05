@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import logo from '../../Images/logo.png'
 export default function Menu() {
 
-    const url = "https://cors-everywhere.herokuapp.com/http://tweet-env.eba-34tepn6j.us-east-1.elasticbeanstalk.com/api/v1.0/tweets/";
+    const url = "https://cors-everywhere.herokuapp.com/http://tweetapp-env.eba-rxpmmhpn.us-west-1.elasticbeanstalk.com/api/v1.0/tweets/";
     const [user, setUser] = useState("");
 
     const navigate = useNavigate();
