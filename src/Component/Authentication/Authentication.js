@@ -8,7 +8,6 @@ function Authentication() {
 
     axios.get(url + 'login/' + user)
         .then((e) => {
-            console.log("Authentication == " + e.data);
             checkUser =  e.data;
         })
 }

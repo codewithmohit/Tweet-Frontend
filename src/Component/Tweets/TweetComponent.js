@@ -63,8 +63,6 @@ export default function TweetComponent(props) {
         axios.delete(url + loginId + "/delete/" + tweetId)
             .then((e) => {
                 const allTweets = props.allTweets.filter(p => p.tweetId !== e.data.tweetId);
-                console.log(allTweets)
-                console.log(allTweets.length)
                 alert("Tweet delete successfully...")
                 if(allTweets.length>0){
                     props.setAllTweets(allTweets)
